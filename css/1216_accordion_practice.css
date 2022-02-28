@@ -1,0 +1,40 @@
+* { margin: 0; padding: 0; list-style: none;}
+a { text-decoration: none; color: #333; display: block;}
+.accor {
+    display: flex;
+}
+.accor li {
+    flex:1; 
+    height: 100vh;
+    text-align: center; 
+    line-height: 100vh;
+    font-size: 50px;
+    transition: all .5s;
+    /* 애니메이션 처럼 부드럽게 움직인다 0.5초동안 */
+}
+.accor li:hover {
+    flex: 1;
+    /* 마우스 오버하면 n분의 1의 1.8배만큼 이미지가 커진다 */
+}
+.accor li a:hover {
+    color: red;
+}
+/* 마우스를 올린것을 제외한 */
+.accor li:not(:hover) {
+    flex: 0.8;
+}
+.accor li a {
+    color: #fff;
+}
+.accor li:nth-child(1) {
+    background: url(../img/main_1.jpg) no-repeat center / cover;
+}
+.accor li:nth-child(2) {
+    background: url(../img/main_2.jpg) no-repeat center / cover;
+}
+.accor li:nth-child(3) {
+    background: url(../img/main_3.jpg) no-repeat center / cover;
+}
+.accor li:nth-child(4) {
+    background: url(../img/main_4.jpg) no-repeat center / cover;
+}
